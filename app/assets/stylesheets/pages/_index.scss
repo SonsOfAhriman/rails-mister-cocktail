@@ -1,0 +1,31 @@
+// Import page-specific CSS files here.
+@import "home";
+
+#logo {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  width: auto;
+  margin: auto;
+  background-size: cover;
+  background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(83, 68, 63,0.1) 50%), url(https://makemeacocktail.com/blog/wp-content/uploads/2019/02/a1.jpg);
+}
+
+.centered h1 {
+  color: white;
+  font-size: 50px;
+  text-shadow: 0px 1px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+
+.title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #4B3734;
+}
