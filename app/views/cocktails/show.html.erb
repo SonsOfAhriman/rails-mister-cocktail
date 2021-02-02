@@ -1,4 +1,4 @@
-<div id="showlogo">
+<div id="showlogo" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(83, 68, 63,0.1) 50%), url(<%= cloudinary_url(@cocktail.photo.key) %>);">
 
 </div>
 
@@ -19,4 +19,5 @@
   <p> <%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %></p>
 
 </div>
+
 

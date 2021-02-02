@@ -14,9 +14,9 @@
 
     <div class="row">
       <% @cocktails.each do |cocktail| %>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="card m-2">
-            <img class="card-img-top" src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1886&q=80">
+            <img class="card-img-top" src="<%= cloudinary_url(cocktail.photo.key)%>">
             <div class="card-body">
               <h5 class="card-title"><%= link_to(cocktail.name, cocktail_path(cocktail)) %> </h5>
             </div>
@@ -27,6 +27,3 @@
   </div>
 
 </div>
-
-
-
