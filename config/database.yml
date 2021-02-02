@@ -87,5 +87,5 @@ test:
 production:
   <<: *default
   database: rails_mister_cocktail_production
-  username: rails_mister_cocktail
-  password: <%= ENV['RAILS_MISTER_COCKTAIL_DATABASE_PASSWORD'] %>
+  username: postgres
+  password: Ryanh856
